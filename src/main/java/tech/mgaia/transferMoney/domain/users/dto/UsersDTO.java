@@ -1,5 +1,7 @@
 package tech.mgaia.transferMoney.domain.users.dto;
 
+import tech.mgaia.transferMoney.domain.users.model.UserType;
+
 import java.math.BigDecimal;
 
 public record UsersDTO(String firstName,
@@ -7,5 +9,6 @@ public record UsersDTO(String firstName,
                        String document,
                        BigDecimal balance,
                        String email,
-                       String password) {
+                       String password,
+                       UserType userType) {
 }
