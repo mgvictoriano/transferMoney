@@ -27,9 +27,10 @@ public class UsersService extends ServiceCrud<Users, Long> {
         return usersRepository.save(user);
     }
 
-    public void create(UsersDTO usersDTO) {
+    public Users create(UsersDTO usersDTO) {
         Users user = userMapper.toObject(usersDTO);
         create(user);
+        return user;
     }
 
     @Override
@@ -37,9 +38,10 @@ public class UsersService extends ServiceCrud<Users, Long> {
         return usersRepository.save(user);
     }
 
-    public void update(UsersDTO usersDTO) {
+    public Users update(UsersDTO usersDTO) {
         Users user = userMapper.toObject(usersDTO);
         update(user);
+        return user;
     }
 
     @Override
@@ -50,8 +52,7 @@ public class UsersService extends ServiceCrud<Users, Long> {
 
     @Override
     public Page<Users> findAll(Users users, Pageable pageable) {
-        Page<Users> usersPage = usersRepository.findAll(Example.of(users), pageable);
-        return usersPage;
+        return usersRepository.findAll(Example.of(users), pageable);
     }
 
     @Override
@@ -68,7 +69,6 @@ public class UsersService extends ServiceCrud<Users, Long> {
         if (sender.getUserType() == UserType.MERCHANT) {
             throw new Exception("Usuário do tipo lojista não está autorizado a realizar transações");
         }
-
         if (sender.getBalance().compareTo(amount) < 0) {
             throw new Exception("Saldo insuficiente");
         }
