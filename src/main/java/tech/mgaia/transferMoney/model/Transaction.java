@@ -1,10 +1,9 @@
-package tech.mgaia.transferMoney.domain.transaction.model;
+package tech.mgaia.transferMoney.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import tech.mgaia.transferMoney.domain.users.model.Users;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

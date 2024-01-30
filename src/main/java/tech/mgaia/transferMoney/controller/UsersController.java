@@ -7,8 +7,8 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import tech.mgaia.transferMoney.domain.users.dto.UsersDTO;
-import tech.mgaia.transferMoney.domain.users.model.Users;
+import tech.mgaia.transferMoney.dtos.UsersDTO;
+import tech.mgaia.transferMoney.model.Users;
 import tech.mgaia.transferMoney.service.UsersService;
 
 @RestController

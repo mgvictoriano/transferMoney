@@ -1,4 +1,4 @@
-package tech.mgaia.transferMoney.domain.users.model;
+package tech.mgaia.transferMoney.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

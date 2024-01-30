@@ -1,6 +1,6 @@
-package tech.mgaia.transferMoney.domain.users.dto;
+package tech.mgaia.transferMoney.dtos;
 
-import tech.mgaia.transferMoney.domain.users.model.UserType;
+import tech.mgaia.transferMoney.model.UserType;
 
 import java.math.BigDecimal;
 

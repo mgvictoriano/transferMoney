@@ -1,12 +1,12 @@
-package tech.mgaia.transferMoney.domain.users.mapper;
+package tech.mgaia.transferMoney.mapper;
 
 import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.NullValuePropertyMappingStrategy;
 import org.mapstruct.factory.Mappers;
-import tech.mgaia.transferMoney.domain.users.dto.UsersDTO;
-import tech.mgaia.transferMoney.domain.users.model.Users;
+import tech.mgaia.transferMoney.dtos.UsersDTO;
+import tech.mgaia.transferMoney.model.Users;
 
 @Mapper
 public interface UsersMapper {

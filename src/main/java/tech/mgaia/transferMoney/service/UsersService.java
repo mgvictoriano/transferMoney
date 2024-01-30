@@ -5,10 +5,10 @@ import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import tech.mgaia.transferMoney.domain.users.dto.UsersDTO;
-import tech.mgaia.transferMoney.domain.users.mapper.UsersMapper;
-import tech.mgaia.transferMoney.domain.users.model.UserType;
-import tech.mgaia.transferMoney.domain.users.model.Users;
+import tech.mgaia.transferMoney.dtos.UsersDTO;
+import tech.mgaia.transferMoney.mapper.UsersMapper;
+import tech.mgaia.transferMoney.model.UserType;
+import tech.mgaia.transferMoney.model.Users;
 import tech.mgaia.transferMoney.infra.ServiceCrud;
 import tech.mgaia.transferMoney.repository.UsersRepository;
 

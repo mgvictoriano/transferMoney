@@ -1,15 +1,12 @@
 package tech.mgaia.transferMoney.service;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import tech.mgaia.transferMoney.domain.transaction.dto.NotificationDTO;
-import tech.mgaia.transferMoney.domain.users.model.Users;
-
-import java.sql.SQLOutput;
+import tech.mgaia.transferMoney.dtos.NotificationDTO;
+import tech.mgaia.transferMoney.model.Users;
 
 @Service
 public class NotificationService {

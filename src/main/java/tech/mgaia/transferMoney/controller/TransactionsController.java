@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import tech.mgaia.transferMoney.domain.transaction.dto.TransactionsDTO;
-import tech.mgaia.transferMoney.domain.transaction.model.Transaction;
+import tech.mgaia.transferMoney.dtos.TransactionsDTO;
+import tech.mgaia.transferMoney.model.Transaction;
 import tech.mgaia.transferMoney.service.TransactionsService;
 
 @RestController

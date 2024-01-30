@@ -1,4 +1,4 @@
-package tech.mgaia.transferMoney.domain.transaction.dto;
+package tech.mgaia.transferMoney.dtos;
 
 import java.math.BigDecimal;
 

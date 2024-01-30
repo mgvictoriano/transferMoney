@@ -5,9 +5,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import tech.mgaia.transferMoney.domain.transaction.dto.TransactionsDTO;
-import tech.mgaia.transferMoney.domain.transaction.model.Transaction;
-import tech.mgaia.transferMoney.domain.users.model.Users;
+import tech.mgaia.transferMoney.dtos.TransactionsDTO;
+import tech.mgaia.transferMoney.model.Transaction;
+import tech.mgaia.transferMoney.model.Users;
 import tech.mgaia.transferMoney.repository.TransactionsRepository;
 
 import java.math.BigDecimal;
